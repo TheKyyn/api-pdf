@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Générateur de PDF, le meilleur du monde (oui)</title>
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="m-10">
+    <h1 class="text-3xl mb-4">Générateur de PDF avec Node.js, Express et beaucoup d'amour (c'est une librairie nofake)</h1>
+    <form id="pdfForm">
+        <label for="documentType" class="block mb-2">Choisissez le type de document à générer :</label>
+        <select name="documentType" id="documentType" class="mb-4 p-2 border rounded">
+            <option value="invoice">Facture</option>
+            <option value="resume">CV</option>
+            <option value="sickLeave">Arrêt maladie</option>
+        </select>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Générer un PDF</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
